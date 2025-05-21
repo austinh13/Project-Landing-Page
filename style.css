@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+.secOneCol{
+    display: flex;
+    flex-direction: column;
+}
+.secOneContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+
+
+
+
+
+.container div{
+    /*background-color: #1F2937;*/
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    
+    height: 25vh;
+}
+
+.secOne{
+    background-color: #007ac1;
+}
+
+.secTwo{
+    background-color: #ef3b24;
+}
+
+.secThree{
+    background-color: #002D62;
+}
+
+.secFour{
+    background-color: #fdbb30;
+}
