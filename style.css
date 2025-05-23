@@ -25,67 +25,72 @@ body {
 /* Navigation Bar */
 
 .nav {
-    display: flex;
-    color: #F9FAF8;
-    background-color: #007ac1;
-    padding: 20px 0px 20px 100px;
-    align-items: center;
+  display: flex;
+  color: #f9faf8;
+  background-color: #007ac1;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    margin-right: auto;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
 }
 
-.links{
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    padding: 0px 100px 0px 0px;  
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.links p{
-    text-decoration: none;
-    color: #E5E7EB;
-    font-size: 20px;
-    padding: 10px;
-    font-family: 'Roboto', arial;
+.links p {
+  color: #e5e7eb;
+  font-size: 18px;
+  padding: 10px;
+  margin: 0;
+  font-family: 'Roboto', arial, sans-serif;
 }
 
 /* Description */
 
 .desc{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #ef3b24;
     align-items: center;
     justify-content: center;
     padding: 50px;
-
+    gap: 40px;
 }
 
 .gamePic{
-    width: 450px;
-    height: 275px;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
     border-radius: 10%;
 }
 .desc-text{
+    flex: 1 1 300px;
+    max-width: 600px;
     display: flex;
-    flex-basis: 350px;
     flex-direction: column;
-    text-align: left;
-    margin-right: 200px;
     align-items: center;
     text-align: center;
+    gap: 20px;
 }
 
 .desc-text button{
-    border-radius: 15px;
-    height: 50px;
-    width: 125px;
-    background-color: #007ac1;
-    font-size: 20px;
+     border-radius: 15px;
+  padding: 10px 20px;
+  background-color: #007ac1;
+  font-size: 18px;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 /* Player Information */
@@ -95,14 +100,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     padding: 20px;
 }
 
 .players{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
+    width: 100%;
 }
 
 .players div{
@@ -112,53 +118,89 @@ body {
     text-align: center;
     color:#fdbb30 ;
     font-size: 18px;
+    max-width: 180px;
 }
 
 .plrImg{
-    width: 160px;
-    height: 180px;
+    max-width: 160px;
+    width: 100%;
+    max-height: 160px;
+    height: 100%;
     border-radius: 10px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: black;
+    border: 3px solid black;
+
 }
 
 /* Player Quotes*/
 .playerQuotes{
+    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     padding: 50px;
     background-color: #fdbb30;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 37px;
     color: #002D62;
     gap: 25px;
 }
 
 .playerQuotes p{
-    width: 500px;
-    height: 250px;
+    flex: 1 1 300px;
+    max-width: 500px;
 }
 
 .playerQuotes img{
-    width: 450px;
-    height: 225px;
+    flex: 1 1 300px;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
 }
 
-.secOne{
+/* Action */
+
+.action{
+    background-color: #b2b4b6;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+}
+
+.action div{
+    display: flex;
+    flex-direction: column  ;
+    max-width: 500px;
+    max-height: 300px;
+    height: 300px;
+    width: 500px;
+    border-radius: 25px;
     background-color: #007ac1;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
 }
 
-.secTwo{
-    background-color: #ef3b24;
+.signButton{
+    border-radius: 15px;
+  padding: 10px 20px;
+  background-color: #002D62;
+  font-size: 18px;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.secThree{
-    background-color: #002D62;
-}
+/* Copy Right */
 
-.secFour{
-    background-color: #fdbb30;
+.copyRight{
+    background-color: #7e8081;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
 }
